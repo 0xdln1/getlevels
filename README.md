@@ -10,6 +10,7 @@ cd getlevels
 chmod +x getlevels 
 sudo mv getlevels /usr/local/bin
 ```
+
 ## Example Usage
 
 ```
