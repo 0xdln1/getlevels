@@ -2,36 +2,36 @@
 
 ## A small Python Script To get all levels of subdomains
 
-
-```
-Easily get 1st level, 2nd level, 3rd level, 4th level .... nth level subdomains 
-```
-
-## Usage
-
-[![asciicast](https://asciinema.org/a/T2vkvjxTFehrwDmtLhfB6f7vK.svg)](https://asciinema.org/a/T2vkvjxTFehrwDmtLhfB6f7vK)
-
-## Example usage
-
-```
-python3 getlevels.py -f [FILE] -l [LEVEL]
-```
+Get any Level of subdomains form `1...N`
 
 # Installation
 
 ```bash
 git clone https://github.com/0xdln1/getlevels
 cd getlevels
-pip install -r requirements.txt
+chmod +x getlevels 
+sudo mv getlevels /usr/local/bin
 ```
-
-## Command-line options
+## Example Usage
 
 ```
-  -h, --help  show this help message and exit
-  -f  FILE,   --file FILE
-  -l  LEVEL,  --level LEVEL
-```
+📄 subdomains.txt
+blog.intigriti.com
+api.intigriti.com
+click.intigriti.com
+login.intigriti.com
+go.intigriti.com
+newsletter.intigriti.com
+www.careers.intigriti.com
 
-## Golang Version of getlevels
-Golang Version of getlevels is available at [github.com/MPaandeey/dlevel](https://github.com/MPaandeey/dlevel) 
+▶ cat subdomains.txt | getlevels 2
+log.intigriti.com                                                                                                                               
+api.intigriti.com                                                                                                                                
+click.intigriti.com                                                                                                                              
+login.intigriti.com                                                                                                                              
+go.intigriti.com                                                                                                                                 
+newsletter.intigriti.com
+
+▶ cat files.txt | getlevels 3
+www.careers.intigriti.com
+```

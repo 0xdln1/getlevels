@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+
+import sys
+import re
+
+level = sys.argv[1]
+
+regexp = "(" + "\\w*\\." *int(level) + "\\w*$)"
+
+for subdomain in sys.stdin:
+    val = re.findall(regexp,subdomain)
+    try:
+        print(val[0])
+    except:
+        pass
