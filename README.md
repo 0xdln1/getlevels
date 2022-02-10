@@ -1,10 +1,8 @@
 # getlevels 
 
-## A small Python Script To get all levels of subdomains
-
 Get any Level of subdomains form `1...N`
 
-# Installation
+## Installation
 
 ```bash
 git clone https://github.com/0xdln1/getlevels
