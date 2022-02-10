@@ -33,5 +33,4 @@ newsletter.intigriti.com
 
 ▶ cat files.txt | getlevels 3
 www.careers.intigriti.com
-
 ```
